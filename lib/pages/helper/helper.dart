@@ -16,23 +16,26 @@ import 'dart:math';
 // Initialization Variables
 bool integrationInitialized = false;
 String? username;
+String? userId;
 String? researchId;
 String? localName;
 ThemeMode? themeMode;
 Color? primaryColor;
 
 initIntegration({
-  String? username,
-  String? researchId,
-  String? localName,
-  ThemeMode? themeMode,
-  Color? primaryColor,
+  String? newUsername,
+  String? newUserId,
+  String? newResearchId,
+  String? newLocalName,
+  ThemeMode? newThemeMode,
+  Color? newPrimaryColor,
 }) {
-  username = username;
-  researchId = researchId;
-  localName = localName;
-  themeMode = themeMode;
-  primaryColor = primaryColor;
+  username = newUsername;
+  userId = newUserId;
+  researchId = newResearchId;
+  localName = newLocalName;
+  themeMode = newThemeMode;
+  primaryColor = newPrimaryColor;
   integrationInitialized = true;
 }
 
